@@ -38,7 +38,7 @@ WebOSWindow {
 		fillMode: VideoOutput.PreserveAspectCrop
 		width: parent.width
 		height: parent.height - 1 //non fullscreen to avoid screensaver automatic disabling 
-		source: videoList[currentIndex].src.H2651080p
+		source: videoList[currentIndex].src.H2654k
 		visible: true
 		autoLoad: true
 		onStopped: {
@@ -149,7 +149,7 @@ WebOSWindow {
 		
 	function playNextVideo() {
 		currentIndex = Math.floor(Math.random() * videoList.length)
-		videoOutput.source = videoList[currentIndex].src.H2651080p
+		videoOutput.source = videoList[currentIndex].src.H2654k
 		videoOutput.play()
 
 	}
